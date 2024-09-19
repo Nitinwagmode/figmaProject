@@ -1,20 +1,20 @@
 import React from "react";
 import Card from "./Card";
 import Image from "next/image";
-import imageOne from "../../public/Event_Services.png";
-import imageTwo from "../../public/Manufacturing.png";
-import imageThree from "../../public/Food_and_beverages.png";
-import imageFour from "../../public/Hospitality.png";
-import imageFive from "../../public/Restaurants.png";
-import imageSix from "../../public/Warehouse.png";
+// import imageOne from "../../public/Event_Services.png";
+// import imageTwo from "../../public/Manufacturing.png";
+// import imageThree from "../../public/Food_and_beverages.png";
+// import imageFour from "../../public/Hospitality.png";
+// import imageFive from "../../public/Restaurants.png";
+// import imageSix from "../../public/Warehouse.png";
 
 const data = [
-  { src: imageOne, alt: "Hospitality", title: "Hospitality" },
-  { src: imageTwo, alt: "Manufacturing", title: "Manufacturing" },
-  { src: imageThree, alt: "Food & Beverage", title: "Food & Beverage" },
-  { src: imageFour, alt: "Restaurants", title: "Restaurants" },
-  { src: imageFive, alt: "Event Services", title: "Event Services" },
-  { src: imageSix, alt: "Warehouse", title: "Warehouse" },
+  { src: "Event_Services.png", alt: "Hospitality", title: "Hospitality" },
+  { src: "Manufacturing.png", alt: "Manufacturing", title: "Manufacturing" },
+  { src: "Food_and_beverages.png", alt: "Food & Beverage", title: "Food & Beverage" },
+  { src: "Hospitality.png", alt: "Restaurants", title: "Restaurants" },
+  { src: "Restaurants.png", alt: "Event Services", title: "Event Services" },
+  { src: "Warehouse.png", alt: "Warehouse", title: "Warehouse" },
 ];
 
 function Section() {
