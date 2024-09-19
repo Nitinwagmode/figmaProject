@@ -5,25 +5,25 @@ const steps = [
     stepNumber: 'Step 1',
     title: 'Quick Signup',
     description: 'Our Grizzly Force technology makes it easy to sign up in minutes',
-    icon: '/IconQuickSignup.png',  // Use distinct icons if available
+    icon: '/step1.png',  // Use distinct icons if available
   },
   {
     stepNumber: 'Step 2',
     title: 'Post Jobs 24/7',
     description: 'Use our mobile app or web platform from the office or on the go, any time of day',
-    icon: '/IconPostJobs.png',
+    icon: '/step2.png',
   },
   {
     stepNumber: 'Step 3',
     title: 'View Matches',
     description: 'Watch your jobs being filled in real time',
-    icon: '/IconViewMatches.png',
+    icon: '/step3.png',
   },
   {
     stepNumber: 'Step 4',
     title: 'We Do The Rest!',
     description: 'We take care of payroll, deductions, and insurance',
-    icon: '/IconDoTheRest.png',
+    icon: '/step4.png',
   },
 ];
 

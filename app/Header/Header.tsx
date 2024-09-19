@@ -9,7 +9,7 @@ export default function Header() {
     <header className="bg-white w-full   py-4">
       <div className=" mx-[7%] gap-0 flex items- lg:items-center justify-between ">
         {/* Left Section: Logo */}
-        <div className="flex sm:flex-start  items-center">
+        <div className="flex sm:flex-start  items-center md:pl-38">
           <Image
             src="/logoforce.png"
             alt="Grizzly Force Logo"
@@ -62,9 +62,9 @@ export default function Header() {
           </a>
           <a
             href="#"
-            className="border border-black px-4 py-2 rounded-lg hover:bg-gray-100"
+            className="border border-black px-4 py-2 rounded-lg hover:bg-gray-100 md:pr-60"
           >
-            <p className="lg:text-[15px] text-[#191818] md:text-[12px]">
+            <p className="lg:text-[15px] text-[#191818] md:text-[12px] w-[150px]">
               Open an account
             </p>
           </a>

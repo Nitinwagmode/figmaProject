@@ -8,6 +8,7 @@ import Section from './Section/Section'
 import JobSeekerComponent from "./JobSeekerComponent"
 import DemandStep  from './DemandStep';
 import Modern from './Modern';
+import Employee from './Employee';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,10 @@ export default function Home() {
        <Header />
        <Modern/>
        <DemandStep />
-       <TestimonialSection />
        <Section/>
-       <JobSeekerComponent />
-      <Footer />
+       <Employee/>
+       <TestimonialSection />
+       <Footer />
        
     </div>
   );
