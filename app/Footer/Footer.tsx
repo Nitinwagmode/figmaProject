@@ -3,32 +3,34 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white w-full py-10">
+    <footer className="bg-black sm:bg-white   w-full  py-10">
       {/* Subscribe to Newsletter */}
-      <div className="text-center">
+      <div className="lg:text-center mx-[8%] text-left">
         <h2 className="text-3xl lg:text-4xl font-bold">
-          Subscribe To Our <span className="text-teal-500">Newsletter</span>
+          <span className="text-white md:text-black">Subscribe To Our </span>{" "}
+          <span className="text-teal-500">Newsletter</span>
         </h2>
-        <p className="text-gray-600 mt-2 mb-6">
+        <p className="text-white text-capitalize sm:text-black sm:normal-case mt-2 mb-6">
           Keep up with the Grizzly Force team!
         </p>
-        <div className="flex justify-center items-center space-x-4">
+
+        <div className="flex lg:flex-row flex-col lg:justify-center w-full gap-6 lg:items-center lg:space-x-4">
           <input
             type="email"
             placeholder="Email Address"
-            className="px-4 py-3 rounded-full border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 lg:w-1/3 w-2/3"
+            className="px-4 py-3 rounded-sm border-[1px] border-[#333333] shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 lg:w-1/3 md:w-2/3 w-full"
           />
-          <button className="bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600 transition">
+          <button className="bg-teal-500 lg:w-1/3 md:w-1/3 w-2/3 text-white px-6 py-3 rounded-md hover:bg-teal-600 transition">
             Submit
           </button>
         </div>
       </div>
 
       {/* Footer */}
-      <div className="grid grid-cols-1 mt-12 md:grid-cols-4 gap-10 text-center md:text-left mt-[6%] lg:mt-16 px-4 lg:px-20">
+      <div className="hidden lg:grid lg:grid-cols-4 mt-12  gap-10 text-center md:text-left mt-[6%] lg:mt-16 px-4 lg:px-20">
         {/* Grizzly Force Section */}
-        <div className="flex justify-start  flex-col w-[36%] ">
-          <div className="flex flex-col justify-start">
+        <div className="flex justify-start  flex-col ">
+          <div className="flex flex-col w-[30%] justify-start">
             <Image
               src="/logoforce.png"
               alt="Grizzly Force Logo"
@@ -38,11 +40,11 @@ export default function Footer() {
             />
           </div>
 
-          <p className="mt-2 text-left w-full text-[13px] text-gray-600">
+          <p className="mt-[12%] text-left w-full text-[13px] text-gray-600">
             Grizzly is a private virtual network that has unique features and
             has high security.
           </p>
-          <div className="mt-[6%] flex  md:justify-start space-x-4">
+          <div className="mt-[12%] flex  md:justify-start space-x-4">
             <a href="#">
               <Image
                 src="/playstore.png"
@@ -157,8 +159,10 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="mt-12 border-t border-gray-300 pt-6 text-center text-sm text-gray-600">
-        <p>© 2022 Grizzly, Inc. All rights reserved</p>
+      <div className="lg:mt-12 mt-6 mx-[8%]  border-0 lg:border-t lg:border-gray-300 pt-6 text-left lg:text-center ">
+        <p className="text-white text-[10px] lg:text-[14px] lg:text-gray-600">
+          © 2022 Grizzly, Inc. All rights reserved
+        </p>
         <div className="flex justify-center space-x-4 mt-4">
           <a href="#" className="hover:text-teal-500">
             <i className="fab fa-facebook-f"></i>
