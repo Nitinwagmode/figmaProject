@@ -5,53 +5,63 @@ const steps = [
     stepNumber: 'Step 1',
     title: 'Quick Signup',
     description: 'Our Grizzly Force technology makes it easy to sign up in minutes',
-    icon: '/IconDual.png',
+    icon: '/IconQuickSignup.png',  // Use distinct icons if available
   },
   {
     stepNumber: 'Step 2',
     title: 'Post Jobs 24/7',
     description: 'Use our mobile app or web platform from the office or on the go, any time of day',
-    icon: '/IconDual.png',
+    icon: '/IconPostJobs.png',
   },
   {
     stepNumber: 'Step 3',
     title: 'View Matches',
-    description: 'With thousands of ready-to-go workers you can watch your jobs being filled in real time',
-    icon: '/IconDual.png',
+    description: 'Watch your jobs being filled in real time',
+    icon: '/IconViewMatches.png',
   },
   {
     stepNumber: 'Step 4',
     title: 'We Do The Rest!',
-    description: 'We take care of payroll, deductions and insurance',
-    icon: '/IconDual.png',
+    description: 'We take care of payroll, deductions, and insurance',
+    icon: '/IconDoTheRest.png',
   },
 ];
 
 const DemandStep = () => {
   return (
-    <section className="bg-[#008000] py-8 px-4 sm:px-8 lg:px-24">
-      <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-2xl font-bold text-center text-teal-700 mb-4">
+    <section className="bg-[#ECF8F8] py-16 px-4 sm:px-8 lg:px-24">
+      <div className="max-w-screen-xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-gray-900 mb-12">
           How On-Demand Staffing Works
         </h2>
-        <section className=" grid grid-cols-2 sm:grid-cols-2 gap-6 ">
+        
+        {/* Grid Layout */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center">
           {steps.map((step, index) => (
             <div
               key={index}
-              className=" flex flex-col items-center p-6 shadow-md rounded-lg">
-              <div className="mb-4 w-16 h-16">
-                <img src={process.env.PUBLIC_URL + step.icon} alt={step.title} />
+              className="flex flex-col items-center text-center p-6 rounded-lg">
+              {/* Icon */}
+              <img
+                src={step.icon}
+                alt={step.title}
+                className="mb-6 w-16 h-16"
+              />
+
+              {/* Step Number and Title */}
+              <div className="mb-2">
+                <h3 className="text-sm font-semibold text-gray-700">
+                  {step.stepNumber} {step.title}
+                </h3>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {step.stepNumber}
-              </h3>
-              <p className="text-gray-600 text-center">
+              {/* Step Description */}
+              <p className="text-sm text-gray-600">
                 {step.description}
               </p>
             </div>
           ))}
-        </section>
+        </div>
       </div>
     </section>
   );
