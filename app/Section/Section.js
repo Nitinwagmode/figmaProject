@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "./Card";
 import Image from "next/image";
-// import imageOne from "../../public/Event_Services.png";
-// import imageTwo from "../../public/Manufacturing.png";
-// import imageThree from "../../public/Food_and_beverages.png";
-// import imageFour from "../../public/Hospitality.png";
-// import imageFive from "../../public/Restaurants.png";
-// import imageSix from "../../public/Warehouse.png";
+import imageOne from "../../public/Event_Services.png";
+import imageTwo from "../../public/Manufacturing.png";
+import imageThree from "../../public/Food_and_beverages.png";
+import imageFour from "../../public/Hospitality.png";
+import imageFive from "../../public/Restaurants.png";
+import imageSix from "../../public/Warehouse.png";
 
 const data = [
   { src: "Event_Services.png", alt: "Hospitality", title: "Hospitality" },

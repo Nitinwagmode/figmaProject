@@ -6,13 +6,15 @@ import Footer from "./Footer/Footer";
 import TestimonialSection from './Testimonials/Testimonials';
 import Section from './Section/Section'
 import JobSeekerComponent from "./JobSeekerComponent"
-import DemandStep  from './DemandStep'
+import DemandStep  from './DemandStep';
+import Modern from './Modern';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
        <Header />
+       <Modern/>
        <DemandStep />
        <TestimonialSection />
        <Section/>
