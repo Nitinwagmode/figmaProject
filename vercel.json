@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "PNPM_FROZEN_LOCKFILE": "false"
+      }
+    }
+  }
+  
