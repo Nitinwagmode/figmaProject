@@ -55,7 +55,7 @@ const DemandStep = () => {
                 </h3>
               </div>
 
-              {/* Step Description */}
+            
               <p className="text-sm text-gray-600">
                 {step.description}
               </p>
